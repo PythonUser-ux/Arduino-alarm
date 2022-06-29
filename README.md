@@ -59,6 +59,6 @@ Once you run the script (from a device connected to the local network) look for 
 ![](Bot_menu.jpg)
 
 Now you are able to send the usual commands from a non local network, but this time there is something additional.<br>
-The "CHECK" command set your alarm to the *surveillance mode* and will notify you by a message when the alarm is ringing. There are two surveillance mode: control_1 and control_2 <br> Control_1 will notify you the first time the alarm goes off and then it exit the control mode leaving the alarm ringing.<br> Control_2 will notify every time the alarm goes off, and when it does the *stop* command will be called and after the pause is finished the bot is ready to send you another notification the next time the alarm rings without exiting the surveillance mode. <br> Control_2 mode is the default. <br>
+The "CHECK" command set your alarm to the *surveillance mode* and will notify you by a message when the alarm is ringing. There are two surveillance mode: control_1 and control_2 <br> Control_1 will notify you the first time the alarm goes off and then it exit the control mode leaving the alarm ringing.<br> Control_2 will notify every time the alarm goes off, and when it does the *stop* command will be called and after the pause is finished the bot is ready to send you another notification the next time the alarm rings without exiting the surveillance mode. <br> Control_2 mode is the default. <br><br>
 Commands are disabled during surveillance mode.<br> Surveillance mode lasts 30 minutes by default but this can be changed. <br><br>
-If you send "SETTINGS" then you can change the surveillance mode and the duration of the surveillance.
+If you send "SETTINGS" then you can change the surveillance mode and its duration.
