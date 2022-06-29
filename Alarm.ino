@@ -2,6 +2,8 @@
 #define trigPin 12 // define TrigPin.
 #define echoPin 11 // define EchoPin.
 #define MAX_DISTANCE 300 // Maximum sensor distance is rated at 400-500cm.
+#define LOWER_BOUND 5 // Alarm lower bound distance (cm).
+#define UPPER_BOUND 88 // Alarm upper bound distance (cm).
 NewPing sonar(trigPin, echoPin, MAX_DISTANCE); // NewPing setup of pins and maximum distance.
 
 bool alarm_on=true;
@@ -31,13 +33,13 @@ void loop(){
     while (alarm_on){
     int sonar_int = sonar.ping_cm();
     //Serial.println(sonar_int);
-    if (5<sonar_int && sonar_int<88){ //&& millis()>2000){
+    if (LOWER_BOUND<sonar_int && sonar_int<UPPER_BOUND){ //&& millis()>2000){
         int sus_time=millis();
         while ((millis()-sus_time)<500){
             delay(50);
             int sonar_int = sonar.ping_cm();
             //Serial.println(sonar_int);
-            if (5<sonar_int && sonar_int<88){
+            if (LOWER_BOUND<sonar_int && sonar_int<UPPER_BOUND){
                 sus++;
                 if (sus==4){
                     analogWrite(5, map(100, 0, 100, 0, 255));
