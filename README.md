@@ -28,3 +28,4 @@ Two consecutive uploads require the USB adaptator to be disconnected and connect
 
 # Remote control
 
+You can give 4 possible commands to the alarm, all of them are accessible via devices connected to the same local network the WiFi module is using, you just need to know the IP address of the WiFi module (readable from the serial port when connecting the WiFi module in UART mode to the pc), and, of course, the credentials.<br>
