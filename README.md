@@ -18,7 +18,7 @@ GPIO-0 and GPIO-2 are connected to the proper Arduino pins and they remain conne
 
 ![](GPIOs.jpg)
 
-# Uploading the code of the WiFi module
+# Uploading the code to the WiFi module
 
 Switch the USB adaptator to PROG mode to upload the code to the ESP8266 ESP-01 via the USB adaptator.<br>
 Insert you WiFi credential into the source code.<br>
@@ -27,7 +27,7 @@ Two consecutive uploads require the USB adaptator to be disconnected and connect
 
 ![](Uploading.jpg)
 
-# Uploading the code of the Arduino board
+# Uploading the code to the Arduino board
 
 Follow the standard procedure but before this remember to set the desired minimum and maximum of the distance interval to control by assigning *LOWER_BOUND* and *UPPER_BOUND* parameters to the proper values.
 
@@ -53,6 +53,7 @@ Displays "0" if the alarm is ringing "1023" otherwise.
 # Remote control via Telegram
 
 Freenove.py makes use of the *telegraphbot* library to level up the bot.<br>
+Read its [ReadMe](https://github.com/PythonUser-ux/Telegraphbot) to know how to work with it.
 
 Once you run the script (from a device connected to the local network) look for @Freenove_bot on Telegram and send "/start" to start the bot.
 
