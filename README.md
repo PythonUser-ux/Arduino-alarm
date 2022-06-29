@@ -10,7 +10,7 @@ The initial idea was to entablish a serial communication between the two boards 
 The connections between the main board and the sensor and the led are trivial while every usable pin of the ESP8266 is connected to the corresponding entrance of the adaptator. <br>
 The VCC and CH_PD pins are connected together before going to te adaptator.<br>
 
-![](VCC and CH_PD.jpg)
+![]("VCC and CH_PD.jpg")
 
 GPIO-0 and GPIO-2 are connected to the proper Arduino pins and they remain connected to the adaptator ready for the next upload of code to the WiFi module.
 
