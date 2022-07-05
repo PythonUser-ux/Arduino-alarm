@@ -38,16 +38,16 @@ To sent a command go to 'http://IP/COMMAND_NAME', substituting IP with your WiFi
 The command names are the ones down here<br>
 <br>
 
-## on
+### on
 Switch on the alarm.
 
-## off
+### off
 Switch off the alarm.
 
-## stop
+### stop
 If the alarm is ringing it deactivates it and starts a pause of 4 seconds. Once the pause is finished the alarm is ready again.
 
-## log
+### log
 Displays "0" if the alarm is ringing "1023" otherwise.
 
 # Remote control via Telegram
