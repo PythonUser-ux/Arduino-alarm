@@ -55,7 +55,7 @@ Displays "0" if the alarm is ringing "1023" otherwise.
 Freenove.py makes use of the *telegraphbot* library to level up the bot.<br>
 Read its [ReadMe](https://github.com/PythonUser-ux/Telegraphbot) to know how to work with it.
 
-Once you run the script (from a device connected to the local network) look for @Freenove_bot on Telegram and send "/start" to start the bot.
+Once you run the script (from a device connected to the local network) look for your bot on Telegram and send "/start" to start the bot.
 
 ![](Bot_menu.jpg)
 
